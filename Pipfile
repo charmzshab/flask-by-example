@@ -8,6 +8,10 @@ verify_ssl = true
 [packages]
 flask = "==1.1.1"
 gunicorn = "==20.0.4"
+flask-sqlalchemy = "===2.4.1"
+flask-migrate = "==2.5.2"
+flask-script = "==2.0.6"
+psycopg2-binary = "==2.8.4"
 
 [requires]
 python_version = "3.8"
