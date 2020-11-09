@@ -37,7 +37,8 @@ def index():
             tokens = nltk.word_tokenize(raw)
             # Turn the tokens into an nltk text object
             text = nltk.Text(tokens)
-            # remove punctuations, count raw words
+            # remove punctuations
+            # regular expression that matched anything in the standard alphabet
             nonPunct = re.compile('.*[A-Za-z].*')
             # using a list comprehension, we created a list of words without punctuation or numbers
             raw_words = [w for w in text if nonPunct.match(w)]
