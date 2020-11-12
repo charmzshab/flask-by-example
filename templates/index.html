@@ -28,9 +28,24 @@
           <br>
           {% raw %}
           <div id="results">
-    
-              {{wordcounts}}
-    
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Word</th>
+                  <th>Count</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% raw %}
+                <tr ng-repeat="element in wordcounts">
+          
+                  <td>{{ element[0] }}</td>
+                  <td>{{ element[1] }}</td>
+          
+                </tr>
+              {% endraw %}
+              </tbody>
+            </table>
           </div>
           {% endraw %}
         </div>
